@@ -1,17 +1,20 @@
 :root{
     --edge-padding: 1em;
     --text-margin: 0.5em;
+    --image-margin: 10em;
+    --article-margin: 6em;
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Montserrat', sans-serif;;
+    
 }
 
 body{
     width: 100%;
-    padding: var(--edge-padding);
 }
 
 /* nav */
@@ -20,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: var(--edge-padding);
+    padding: 1em 1em 3em;
 }
 
 .logo{
@@ -35,8 +38,9 @@ nav {
     margin: 0 var(--text-margin);
     color: black;
     text-decoration: none;
-    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace; */
     font-size: 1.6rem;
+    font-weight: 900;
 }
 
 .nav-elements a:hover{
@@ -46,12 +50,49 @@ nav {
 /* introduction */
 
 .main-image{
-    width: 40%;
+    width: 30%;
+    height: 100%;
     border-radius: 50%;
-    padding: var(--edge-padding);
-
+    margin-right: var(--image-margin);
 }
 
 .introduction{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myName{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.introduction__text strong{
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase; 
+}
+
+.introduction__text p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* education */
+article{
+    margin: var(--article-margin);
+}
+
+.education-title{
+    font-size: 3rem;
+    font-weight: 900; 
+}
+
+.school,
+.major,
+.minor{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
 }

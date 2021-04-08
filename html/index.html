@@ -12,7 +12,7 @@
 			property="og:description"
 			content="The webpage of Yoojeong Clare Lee."
 		/>
-		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Yoojeong Clare Lee</title>
 	</head>
@@ -24,7 +24,7 @@
 				alt="logo"
 			/>
 			<div class="nav-elements">
-				<a href="#">About</a>
+				<a href="#education">Education</a>
 				<a href="#">Education</a>
 				<a href="#">Experience</a>
 				<a href="#">Tech-Skill</a>
@@ -34,14 +34,26 @@
 			<section class="introduction">
 				<img class="main-image" src="./images/me_smiling.jpeg" alt="Me Smiling" />
 				<div class="introduction__text">
-					<h1>My name is <strong>Yoojeong Clare Lee</strong></h1>
+					<h1 class="myName">My name is <br/><br/><strong>Yoojeong Clare Lee</strong></h1>
 					<p>
-						I'm a front-end engineer who loves to deep dive into problems and
-						has strong problem solving skills.
+						I'm a front-end engineer who loves to <br/>deep dive into problems and
+						has<br/> strong problem solving skills.
 					</p>
 				</div>
 			</section>
-			<section class="info"></section>
+			<section class="info">
+				<article id="education">
+					<span class="education-title">Education</span>
+						<ul class="schools">
+							<li>
+								<p class="school">Pohang University of Science and Technology(POSTECH)</p>
+								<p class="major">Major: Creative IT Engineering</p>
+								<p class="minor">Minor: Entrepreneurship</p>
+							</li>
+						</ul>
+				</article>
+				
+			</section>
 		</main>
 		<footer></footer>
 	</body>
