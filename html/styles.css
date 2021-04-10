@@ -9,7 +9,8 @@
     margin: 0;
     box-sizing: border-box;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
     
 }
 
@@ -60,6 +61,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2em 0 10em;
 }
 
 .myName{
@@ -72,6 +74,7 @@ nav {
     font-size: 3.5rem;
     font-weight: 900;
     text-transform: uppercase; 
+    color: #4256a3
 }
 
 .introduction__text p{
@@ -81,18 +84,45 @@ nav {
 
 /* education */
 article{
-    margin: var(--article-margin);
+    margin: 2em 0 0;
+    padding: 4em;
+}
+
+article:nth-child(2n-1){
+    background-color:  #4256a3;
+    color: white;
 }
 
 .education-title{
     font-size: 3rem;
-    font-weight: 900; 
+    font-weight: 600; 
+}
+
+.schools{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    padding: 3em 0;
+}
+
+.postech-logo{
+    width: 30%;
 }
 
 .school,
 .major,
 .minor{
-    font-size: 2rem;
-    color: black;
+    color: white;
     text-decoration: none;
+}
+
+.school{
+    font-size: 1rem;
+}
+
+.major,
+.minor{
+    font-size: 1.2rem;
 }
